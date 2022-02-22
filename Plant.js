@@ -18,4 +18,8 @@ class Plant{
         image(this.image,pos.x, pos.y, this.width, this.height);
         pop();
       }
+
+      remove(){
+          World.remove(world,this.body);
+      }
 }
